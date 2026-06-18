@@ -10,6 +10,8 @@
       type="image/svg+xml"
       href="/favicon.svg"
     />
+    <!-- Pin the config to an absolute path so it loads at /sanjuoliveteddy -->
+    <link href="/sanjuoliveteddy/config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
     <!-- Netlify Identity Widget -->
@@ -17,12 +19,12 @@
     <!-- Decap CMS (formerly Netlify CMS) -->
     <script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
     <script>
-      // Redirect users to the admin after login from the home page.
+      // Redirect users to the content manager after login from the home page.
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
+              document.location.href = "/sanjuoliveteddy/";
             });
           }
         });

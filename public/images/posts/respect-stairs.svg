@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Children greeting a teacher on a school staircase at sunrise">
+  <defs>
+    <linearGradient id="r1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6c9"/><stop offset="1" stop-color="#ffc6d6"/></linearGradient>
+    <radialGradient id="r2" cx="0.7" cy="0.3" r="0.5"><stop offset="0" stop-color="#fff4dc"/><stop offset="1" stop-color="#ffd28a"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#r1)"/>
+  <circle cx="560" cy="150" r="80" fill="url(#r2)"/>
+  <!-- staircase -->
+  <g fill="#d98fc0">
+    <rect x="80" y="430" width="640" height="40"/>
+    <rect x="150" y="380" width="500" height="50"/>
+    <rect x="220" y="330" width="360" height="50"/>
+    <rect x="290" y="280" width="220" height="50"/>
+  </g>
+  <g fill="#c277ad" opacity="0.6">
+    <rect x="80" y="430" width="640" height="8"/>
+    <rect x="150" y="380" width="500" height="8"/>
+    <rect x="220" y="330" width="360" height="8"/>
+    <rect x="290" y="280" width="220" height="8"/>
+  </g>
+  <!-- teacher figure (right, ascending) -->
+  <g transform="translate(470 300)">
+    <circle cx="0" cy="-30" r="16" fill="#8e3f76"/>
+    <path d="M-16 -14 q16 -10 32 0 l6 46 h-44Z" fill="#a85fab"/>
+  </g>
+  <!-- children with folded hands (left) -->
+  <g transform="translate(230 360)">
+    <circle cx="0" cy="-22" r="12" fill="#6b3160"/>
+    <path d="M-12 -10 q12 -8 24 0 l4 34 h-32Z" fill="#fb6f87"/>
+    <path d="M2 6 q10 -4 18 -2" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(320 410)">
+    <circle cx="0" cy="-22" r="12" fill="#6b3160"/>
+    <path d="M-12 -10 q12 -8 24 0 l4 34 h-32Z" fill="#ec5a74"/>
+    <path d="M2 6 q10 -4 18 -2" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- birds -->
+  <g stroke="#8e3f76" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"><path d="M150 120 q12 -10 24 0 q12 -10 24 0"/></g>
+</svg>

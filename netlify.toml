@@ -9,9 +9,9 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Decap CMS admin
+# Decap CMS content manager
 [[headers]]
-  for = "/admin/*"
+  for = "/sanjuoliveteddy/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
 

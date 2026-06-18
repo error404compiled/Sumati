@@ -2,6 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
+# Local development: when you run `npm run cms`, Decap writes posts directly to
+# your local content/ files (no login needed). Remove this line in production —
+# it is ignored on the deployed Netlify site.
+local_backend: true
+
 # Editorial workflow enables Draft → In Review → Ready, plus scheduling.
 publish_mode: editorial_workflow
 

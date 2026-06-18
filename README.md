@@ -17,7 +17,7 @@ Built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**,
 - Article pages with table of contents, social sharing, prev/next, comments
 - Categories, About (timeline + values + gallery), Contact (Netlify Forms)
 - Newsletter signup via Netlify Forms with spam protection (honeypot)
-- Decap CMS admin at `/admin` with Netlify Identity + editorial workflow
+- Decap CMS admin at `/sanjuoliveteddy` with Netlify Identity + editorial workflow
 - Full SEO: dynamic metadata, Open Graph, Twitter cards, JSON-LD
   (`BlogPosting`, `BreadcrumbList`, `WebSite`), `sitemap.xml`, `robots.txt`
 - Subtle Framer Motion animations (fade-in, hover, sticky navbar)
@@ -43,12 +43,12 @@ Built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**,
 
 ```
 .
-├── content/                # Markdown content (edited via /admin)
+├── content/                # Markdown content (edited via /sanjuoliveteddy)
 │   ├── posts/              # Blog posts
 │   ├── authors/            # Author profiles
 │   └── categories/         # Category definitions
 ├── public/
-│   ├── admin/              # Decap CMS (index.html + config.yml)
+│   ├── sanjuoliveteddy/     # Decap CMS (index.html + config.yml)
 │   ├── images/             # SVG illustrations & uploads
 │   ├── __forms.html        # Netlify Forms detection
 │   └── favicon.svg
@@ -72,7 +72,7 @@ npm install
 npm run dev
 ```
 
-Open <http://localhost:3000>. The CMS admin is at <http://localhost:3000/admin>
+Open <http://localhost:3000>. The CMS is at <http://localhost:3000/sanjuoliveteddy>
 (login requires Netlify Identity, configured after deployment).
 
 ```bash
@@ -107,7 +107,7 @@ draft: false
 Your **Markdown** content here.
 ```
 
-Or edit everything visually at `/admin`.
+Or edit everything visually at `/sanjuoliveteddy`.
 
 ---
 
@@ -135,7 +135,7 @@ Or edit everything visually at `/admin`.
    - **Services → Git Gateway** → *Enable Git Gateway*.
    - Registration → set to *Invite only* (recommended).
    - Identity → **Invite users** → invite your email, accept the invite, set a
-     password. Then log in at `/admin`.
+     password. Then log in at `/sanjuoliveteddy`.
 
 4. **Enable Netlify Forms**
    - Forms are auto-detected from `public/__forms.html` on deploy.
