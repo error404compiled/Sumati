@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Open hands holding light, symbolising gratitude">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe7c2"/><stop offset="1" stop-color="#ffc6d6"/></linearGradient>
+    <radialGradient id="g2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff6df"/><stop offset="1" stop-color="#ffd98a"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g1)"/>
+  <circle cx="400" cy="220" r="70" fill="url(#g2)"/>
+  <g fill="#e98aa8"><path d="M300 360 q40 -60 100 -60 q60 0 100 60 q-20 60 -100 60 q-80 0 -100 -60Z"/></g>
+  <g stroke="#ffd98a" stroke-width="5" stroke-linecap="round" opacity="0.8"><path d="M400 120 V90"/><path d="M340 140 L320 118"/><path d="M460 140 L480 118"/></g>
+</svg>

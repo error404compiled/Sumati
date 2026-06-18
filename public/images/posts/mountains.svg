@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Misty mountains at dawn">
+  <defs>
+    <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e7c6e8"/><stop offset="1" stop-color="#ffd1de"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#m1)"/>
+  <circle cx="560" cy="160" r="70" fill="#fff2dd" opacity="0.9"/>
+  <path d="M0 360 L160 200 L300 360Z" fill="#b07bb3"/>
+  <path d="M220 360 L420 170 L600 360Z" fill="#9a5fa0"/>
+  <path d="M480 360 L660 220 L800 360Z" fill="#80468a"/>
+  <rect x="0" y="360" width="800" height="140" fill="#c98fc0"/>
+  <path d="M0 400 Q200 380 400 400 T800 400" stroke="#fff" stroke-width="6" fill="none" opacity="0.4"/>
+</svg>

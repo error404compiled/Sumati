@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Relationships">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcaedd"/><stop offset="1" stop-color="#c483c6"/></linearGradient></defs>
+  <circle cx="60" cy="60" r="60" fill="url(#c)"/>
+  <path d="M60 86 C40 70 34 58 42 50 C48 44 56 48 60 54 C64 48 72 44 78 50 C86 58 80 70 60 86Z" fill="#fff"/>
+</svg>

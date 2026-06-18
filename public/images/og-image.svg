@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Sumati's Seeds of Wisdom">
+  <defs>
+    <linearGradient id="ogbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff5f6"/>
+      <stop offset="1" stop-color="#ffe1ea"/>
+    </linearGradient>
+    <linearGradient id="oglotus" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb6f87"/>
+      <stop offset="1" stop-color="#a85fab"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <g transform="translate(600 250)">
+    <path d="M0 40 C-8 0 -8 -40 0 -70 C8 -40 8 0 0 40Z" fill="url(#oglotus)"/>
+    <path d="M0 40 C-30 18 -50 -8 -56 -42 C-22 -34 -6 -8 0 40Z" fill="#fb6f87"/>
+    <path d="M0 40 C30 18 50 -8 56 -42 C22 -34 6 -8 0 40Z" fill="#fb6f87"/>
+    <path d="M0 40 C-52 28 -80 6 -96 -22 C-56 -22 -24 0 0 40Z" fill="#ffa0b4"/>
+    <path d="M0 40 C52 28 80 6 96 -22 C56 -22 24 0 0 40Z" fill="#ffa0b4"/>
+  </g>
+  <text x="600" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="72" fill="#2c2530" font-weight="700">Sumati's Seeds of Wisdom</text>
+  <text x="600" y="460" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" fill="#6f6675">Where timeless wisdom meets everyday life</text>
+</svg>

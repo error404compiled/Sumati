@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Gratitude">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9fb0"/><stop offset="1" stop-color="#ec5a74"/></linearGradient></defs>
+  <circle cx="60" cy="60" r="60" fill="url(#c)"/>
+  <path d="M44 84 q-2 -22 16 -22 q18 0 16 22 q-16 8 -32 0Z" fill="#fff"/>
+  <g stroke="#ffe1ea" stroke-width="4" stroke-linecap="round"><path d="M60 50 V40"/><path d="M48 54 L42 46"/><path d="M72 54 L78 46"/></g>
+</svg>

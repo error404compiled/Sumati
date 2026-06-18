@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Sunrise over a winding path">
+  <defs>
+    <linearGradient id="s1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe0c2"/><stop offset="1" stop-color="#f7a9c4"/></linearGradient>
+    <radialGradient id="s2" cx="0.5" cy="0.7" r="0.6"><stop offset="0" stop-color="#fff3d6"/><stop offset="1" stop-color="#ffcaa0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#s1)"/>
+  <circle cx="400" cy="240" r="110" fill="url(#s2)"/>
+  <path d="M0 320 Q200 250 400 310 T800 300 V500 H0Z" fill="#d97aa6"/>
+  <path d="M0 380 Q220 320 440 380 T800 370 V500 H0Z" fill="#b8588f"/>
+  <path d="M340 500 Q400 380 460 500Z" fill="#8e3f76"/>
+  <g stroke="#8e3f76" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"><path d="M120 120 q14 -12 28 0 q14 -12 28 0"/></g>
+</svg>

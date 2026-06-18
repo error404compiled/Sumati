@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" role="img" aria-label="A peaceful figure meditating before a sunrise over mountains and lotus flowers">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd9e0"/>
+      <stop offset="0.55" stop-color="#ffb7c8"/>
+      <stop offset="1" stop-color="#f49ab6"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6e6"/>
+      <stop offset="1" stop-color="#ffd28a"/>
+    </radialGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e57aa0"/>
+      <stop offset="1" stop-color="#c75a8b"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8588f"/>
+      <stop offset="1" stop-color="#8e3f76"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd0dd"/>
+      <stop offset="1" stop-color="#f7a9c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="560" rx="36" fill="url(#sky)"/>
+  <circle cx="320" cy="250" r="120" fill="url(#sun)" opacity="0.95"/>
+  <circle cx="320" cy="250" r="150" fill="#fff3df" opacity="0.25"/>
+  <!-- distant hills -->
+  <path d="M0 360 Q120 300 230 350 T460 340 T640 360 V560 H0 Z" fill="url(#hill2)" opacity="0.85"/>
+  <path d="M0 410 Q160 350 320 400 T640 405 V560 H0 Z" fill="url(#hill1)"/>
+  <!-- water -->
+  <rect x="0" y="470" width="640" height="90" fill="url(#water)"/>
+  <ellipse cx="320" cy="470" rx="320" ry="22" fill="#ffe1ea" opacity="0.5"/>
+  <!-- meditating figure -->
+  <g transform="translate(320 430)">
+    <ellipse cx="0" cy="36" rx="70" ry="16" fill="#7a3566" opacity="0.35"/>
+    <path d="M-62 34 Q0 -6 62 34 Z" fill="#5c2a52"/>
+    <circle cx="0" cy="-44" r="26" fill="#6b3160"/>
+    <path d="M-26 -44 a26 26 0 0 1 52 0 q-26 -14 -52 0 Z" fill="#522446"/>
+    <rect x="-10" y="-22" width="20" height="34" rx="9" fill="#6b3160"/>
+  </g>
+  <!-- lotus flowers floating -->
+  <g transform="translate(110 500)" fill="#ffeaf1">
+    <ellipse cx="0" cy="0" rx="22" ry="9"/>
+    <path d="M0 -14 q10 8 0 14 q-10 -6 0 -14Z" fill="#ffd2e0"/>
+    <path d="M-16 -4 q4 10 16 6 q-8 -10 -16 -6Z" fill="#ffdbe8"/>
+    <path d="M16 -4 q-4 10 -16 6 q8 -10 16 -6Z" fill="#ffdbe8"/>
+  </g>
+  <g transform="translate(530 510)" fill="#ffeaf1">
+    <ellipse cx="0" cy="0" rx="20" ry="8"/>
+    <path d="M0 -12 q9 7 0 12 q-9 -5 0 -12Z" fill="#ffd2e0"/>
+    <path d="M-14 -3 q3 9 14 5 q-7 -9 -14 -5Z" fill="#ffdbe8"/>
+    <path d="M14 -3 q-3 9 -14 5 q7 -9 14 -5Z" fill="#ffdbe8"/>
+  </g>
+  <!-- birds -->
+  <g stroke="#7a3566" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6">
+    <path d="M120 150 q12 -10 24 0 q12 -10 24 0"/>
+    <path d="M470 120 q9 -8 18 0 q9 -8 18 0"/>
+  </g>
+</svg>

@@ -1,0 +1,135 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Editorial workflow enables Draft → In Review → Ready, plus scheduling.
+publish_mode: editorial_workflow
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://sumatis-seeds-of-wisdom.netlify.app
+display_url: https://sumatis-seeds-of-wisdom.netlify.app
+logo_url: /favicon.svg
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    label_singular: "Post"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          hint: "URL-friendly identifier, e.g. finding-your-purpose",
+        }
+      - {
+          label: "Excerpt",
+          name: "excerpt",
+          widget: "text",
+          hint: "Short summary shown on cards and previews.",
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "relation",
+          collection: "authors",
+          search_fields: ["name"],
+          value_field: "{{slug}}",
+          display_fields: ["name"],
+          default: "sumati",
+        }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "relation",
+          collection: "categories",
+          search_fields: ["name"],
+          value_field: "{{slug}}",
+          display_fields: ["name"],
+        }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - {
+          label: "Rating",
+          name: "rating",
+          widget: "number",
+          default: 3,
+          min: 0,
+          max: 3,
+          value_type: "int",
+        }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "SEO Title",
+          name: "seoTitle",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "SEO Description",
+          name: "seoDescription",
+          widget: "text",
+          required: false,
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "categories"
+    label: "Categories"
+    label_singular: "Category"
+    folder: "content/categories"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "name"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - {
+          label: "Accent Color",
+          name: "color",
+          widget: "string",
+          default: "#fb6f87",
+          hint: "Hex color used for the category accent.",
+        }
+
+  - name: "authors"
+    label: "Authors"
+    label_singular: "Author"
+    folder: "content/authors"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "name"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Profile Picture", name: "avatar", widget: "image" }
+      - { label: "Bio", name: "bio", widget: "text" }
+      - label: "Social Links"
+        name: "socials"
+        widget: "object"
+        fields:
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "YouTube", name: "youtube", widget: "string", required: false }
+          - { label: "Facebook", name: "facebook", widget: "string", required: false }
+          - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+          - { label: "Website", name: "website", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }

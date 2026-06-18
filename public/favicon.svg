@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Lotus">
+  <defs>
+    <linearGradient id="fl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb6f87"/>
+      <stop offset="1" stop-color="#a85fab"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(32 38)">
+    <path d="M0 14 C-3 0 -3 -16 0 -26 C3 -16 3 0 0 14Z" fill="url(#fl)"/>
+    <path d="M0 14 C-12 7 -20 -3 -22 -16 C-9 -13 -2 -3 0 14Z" fill="#fb6f87"/>
+    <path d="M0 14 C12 7 20 -3 22 -16 C9 -13 2 -3 0 14Z" fill="#fb6f87"/>
+    <path d="M0 14 C-20 11 -31 2 -37 -9 C-21 -9 -9 0 0 14Z" fill="#ffa0b4"/>
+    <path d="M0 14 C20 11 31 2 37 -9 C21 -9 9 0 0 14Z" fill="#ffa0b4"/>
+  </g>
+</svg>

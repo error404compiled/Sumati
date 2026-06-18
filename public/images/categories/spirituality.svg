@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Spirituality">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c483c6"/><stop offset="1" stop-color="#a85fab"/></linearGradient></defs>
+  <circle cx="60" cy="60" r="60" fill="url(#c)"/>
+  <g transform="translate(60 72)"><path d="M0 8 C-3 -4 -3 -22 0 -32 C3 -22 3 -4 0 8Z" fill="#fff"/><path d="M0 8 C-14 2 -22 -8 -24 -20 C-11 -17 -3 -6 0 8Z" fill="#ffe1f0"/><path d="M0 8 C14 2 22 -8 24 -20 C11 -17 3 -6 0 8Z" fill="#ffe1f0"/></g>
+</svg>

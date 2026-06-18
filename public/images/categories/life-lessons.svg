@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Life Lessons">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8aa0"/><stop offset="1" stop-color="#ec5a74"/></linearGradient></defs>
+  <circle cx="60" cy="60" r="60" fill="url(#c)"/>
+  <path d="M42 40 h30 a6 6 0 0 1 6 6 v40 l-21 -10 -21 10 V46 a6 6 0 0 1 6 -6Z" fill="#fff"/>
+  <path d="M50 56 h20 M50 66 h14" stroke="#ec5a74" stroke-width="4" stroke-linecap="round"/>
+</svg>
