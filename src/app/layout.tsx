@@ -105,23 +105,6 @@ export default function RootLayout({
         <Navbar searchItems={searchItems} />
         <main id="content">{children}</main>
         <Footer categories={categories} />
-
-        {/* Netlify Identity — enables Decap CMS login + invite redirects */}
-        <Script
-          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          strategy="afterInteractive"
-        />
-        <Script id="netlify-identity-redirect" strategy="afterInteractive">
-          {`if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", function (user) {
-              if (!user) {
-                window.netlifyIdentity.on("login", function () {
-                  document.location.href = "/sanjuoliveteddy/";
-                });
-              }
-            });
-          }`}
-        </Script>
       </body>
     </html>
   );

@@ -1,10 +1,12 @@
+# The GitHub backend is finalised in index.html (so base_url follows whatever
+# domain the site is deployed to). These values are the fallback / defaults.
 backend:
-  name: git-gateway
+  name: github
+  repo: error404compiled/Sumati
   branch: main
 
 # Local development: when you run `npm run cms`, Decap writes posts directly to
-# your local content/ files (no login needed). Remove this line in production —
-# it is ignored on the deployed Netlify site.
+# your local content/ files (no login needed). It is ignored on the live site.
 local_backend: true
 
 # Editorial workflow enables Draft → In Review → Ready, plus scheduling.

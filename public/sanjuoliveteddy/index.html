@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Seeds of Wisdom — Content Manager</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Pin the config to an absolute path so it loads at /sanjuoliveteddy -->
-    <link href="/sanjuoliveteddy/config.yml" type="text/yaml" rel="cms-config-url" />
+    <link
+      href="/sanjuoliveteddy/config.yml"
+      type="text/yaml"
+      rel="cms-config-url"
+    />
+    <!-- We initialise the CMS manually so we can point the GitHub login at
+         this site's own OAuth endpoints, on whatever domain it is deployed to
+         (Vercel, Netlify, custom domain — all work without editing this file). -->
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
   </head>
   <body>
-    <!-- Netlify Identity Widget -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <!-- Decap CMS (formerly Netlify CMS) -->
     <script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
     <script>
-      // Redirect users to the content manager after login from the home page.
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/sanjuoliveteddy/";
-            });
-          }
-        });
-      }
+      // Merge a GitHub backend over the settings in config.yml. The base_url is
+      // the current origin, so the login uses /api/auth + /api/callback on this
+      // same deployment — no Netlify Identity or git-gateway required.
+      window.CMS.init({
+        config: {
+          backend: {
+            name: "github",
+            repo: "error404compiled/Sumati",
+            branch: "main",
+            base_url: window.location.origin,
+            auth_endpoint: "api/auth",
+          },
+        },
+      });
     </script>
   </body>
 </html>
